@@ -38,3 +38,29 @@ Multi-agent system with Coordinator routing to specialized sub-agents:
 
 ## 📝 License
 MIT - Built for Kaggle Agents Intensive Capstone Project
+## 🔑 Setup Instructions
+
+### 1. Get Gemini API Key
+- Visit [Google AI Studio](https://aistudio.google.com/apikey)
+- Create a new API key (free tier available)
+- Copy your API key
+
+### 2. Configure API Key
+
+**For Kaggle:**
+- Open notebook
+- Go to Add-ons → Secrets
+- Add secret: `GEMINI_API_KEY` = your_key
+
+**For Local Development:**
+- Create `.env` file in project root
+- Add: `GEMINI_API_KEY=your_key_here`
+- Never commit `.env` to Git!
+
+### 3. Run the Project
+- pip install -r requirements.txt
+- python agent.py
+
+## ⚠️ Security Note
+Never commit API keys to Git. Always use environment variables or secrets management.
+  
